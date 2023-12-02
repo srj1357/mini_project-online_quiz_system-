@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Quiz App</title>
+</head>
+<body>
+  <div id="login-container" class="container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="button" onclick="validateLogin()">Login</button>
+    </form>
+    <p id="error-message"></p>
+  </div>
+
+  <div id="quiz-container" class="container hidden">
+    <div id="final-score" class="hidden">
+        <h2>Final Score</h2>
+        <p id="score-message"></p>
+      </div>
+   
+    <h2>Quiz Time!</h2>
+    <p id="timer"></p>
+    <p id="question"></p>
+    <div id="options"></div>
+    
+    <p id="result-message"></p>
+  </div>
+ 
+
+
+  <script src="script.js"></script>
+</body>
+</html>
